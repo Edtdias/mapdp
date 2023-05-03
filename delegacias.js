@@ -1,0 +1,10 @@
+var dpGeral = L.marker([0.04145,-51.06004]).bindPopup('Delegacia Geral'),
+	primeiraDP = L.marker([0.02880,-51.08266]).bindPopup('1ª DP'),
+	segundaDP = L.marker([0.05554562364178997, -51.05407835666812]).bindPopup('2ª DP'),
+	quartaDP = L.marker([0.0131942137229952, -51.087985604042366]).bindPopup('4ª DP'),
+	quintaDP = L.marker([0.003979363165222913, -51.06204546332135]).bindPopup('5ª DP'),
+	sextaDP = L.marker([0.028747579734948014, -51.058550753798556]).bindPopup('6ª DP'),
+	setimaDP = L.marker([0.09223509925924257, -51.05026779230846]).bindPopup('7ª DP'),
+	oitavaDP = L.marker([0.08449528706923788, -51.09463872173597]).bindPopup('8ª DP'),
+	nonaDP = L.marker([0.002169940665773394, -51.07903799615751]).bindPopup('9ª DP'),
+	decimaDP = L.marker([-0.04890441746718285, -51.118876029111895]).bindPopup('10ª DP');
