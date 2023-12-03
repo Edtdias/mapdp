@@ -3,36 +3,52 @@
 <head>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KBCEN891ZR"></script>
-	<script>
- 	 window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
- 	 gtag('config', 'G-KBCEN891ZR');
-	</script>
+	<script>window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-KBCEN891ZR');</script>
+	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ProjetoQualDP</title>
+	<title>Delegacias em Macapá</title>
 	
-	<link rel="stylesheet" href="leaflet.css"/>
+	<link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css"/>
+	
+	
+	
+	
+	<link rel="stylesheet" href="./node_modules/leaflet-search/dist/leaflet-search.src.css"/>
+
 	<!-- Make sure you put this AFTER Leaflet's CSS -->
-	<script src="leaflet.js"></script>
-	<script src = brasaoPC.js></script>
-	<script src = bairrosDP.js></script>
-	<script src = delegacias.js></script>
-	<style>
-		#map { height: 90vh;}
-		#dpc{ color: white;}
-		#body{background-color: black;}
-	</style>
+	<script src="./node_modules/leaflet/dist/leaflet.js"></script>
+	
+	
+	
+	<script src="./node_modules/leaflet/dist/leaflet-src.js"></script>
+		
+	<script src="./node_modules/leaflet-search/dist/leaflet-search.src.js"></script>
+	
+	
+	<script src="./node_modules/leaflet/dist/brasaoPC.js"></script>
+	<script src="./node_modules/leaflet/dist/bairrosDP.js"></script>
+	<script src="./node_modules/leaflet/dist/delegacias.js"></script>
+	
 	
 </head>
-<body id="body">
-	<div id="titulo">
-		<h2 id="dpc"><center>Delegacias da Capital</center></h2>
-		<div id="map"></div>
+<body>
+	<div class="container">
+		<div class="body-container">
+			<div class="header-container">
+				<h2>Unidades Policiais em Macapá</h2>
+				<div class="virtual-container"><h3><a href="https://delegaciavirtual.sinesp.gov.br/portal/"  target="_blanck" title="Clicar para visitar Site da Delegacia Virtual">Delegacia Virtual</a></h3></div>
+				<h6 id="site-fonte"><a href="http://www.policiacivil.ap.gov.br/"  target="_blanck" title="Clicar para visitar Site da Polícia Civil do Amapá para mais informações">Fonte: Policia Civil do Amapá</a></h6>
+			</div>		
+			
+			<div class="map-container">
+				<div id="map"></div>
+			</div>
+		</div>
+		
 	</div>
-<script src =map.js></script>
+<script src ="./node_modules/leaflet/dist/map.js"></script>
 </body>
 </html>
